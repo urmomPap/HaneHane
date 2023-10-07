@@ -1,0 +1,84 @@
+@font-face { font-family: Pixeled; src: url('Pixeled.ttf');} /* Font implementation */
+
+body {margin: 0px; color:rgb(255, 255, 255); font-family:'Pixeled';} /* Font config */
+::-webkit-scrollbar{display: none;} /* Dont display scrollbar */
+nav{user-select: none;} /* Can't select nav elements */
+
+#breset {
+    color: white;
+    font-family: 'Pixeled';
+    padding-bottom: 5px;
+    background-color: #403F4C;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #121420;
+}
+#breset:hover {cursor:pointer; background-color:#2C2B3C;}
+
+.element:hover {
+    cursor:pointer; /* Cursor pointer for nav elements */
+
+    color:#b65d57; /* Hover color change */
+}
+
+.pole {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(211, 210, 210);
+    border: 5px solid #181720;
+}
+
+.pole:hover {
+    background-color: #2C2B3C;
+}
+
+.plansza {
+    padding-top: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav, footer {
+    background-color: #2C2B3C; /* Background color */
+
+    vertical-align: middle; /* Center vertically */
+    line-height: 50px;
+
+    width: 100%;
+
+    display: flex; /* Display nav items in rows*/
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 25px; /* Font Size */
+}
+nav {height: 50px;}
+
+footer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font implementation */
+
+    position: absolute; /* Stick to bottom fix */
+    bottom: 0;
+    height: 60px;
+
+    padding-bottom: 20px; /* Center vertically */
+}
+
+main {
+    background-color: #121420; 
+
+    width: 100%; /* 100% without nav and footer */
+    top: 50px; 
+    bottom: 50px;
+    position:absolute;
+}
+
+section#left {
+    font-size: 20px;
+    background-color: #403F4C;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
