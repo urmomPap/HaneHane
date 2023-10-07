@@ -11,13 +11,13 @@
     <div id="nav">
         <table>
             <tr>
-                <td>Menu</td>
-                <td>HT</td>
-                <td><?php 
+                <td><a href="#">Menu</a></td>
+                <td><a href="#">HT</a></td>
+                <td><a href="#"><?php 
                     session_start();
                     if(isset($_SESSION["user"])) echo $_SESSION["user"];
                     else echo "Zaloguj";
-                    ?></td>
+                    ?></a></td>
             </tr>
         </table>
     </div>

@@ -17,6 +17,10 @@ table {
 td {
     width: 33%;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 
 #nav {
     position: absolute;
