@@ -9,20 +9,19 @@
 </head>
 <body>
     <div id="nav">
-        <table>
+        <table id="navtable">
             <tr>
-                <td><a href="#">Menu</a></td>
-                <td><a href="#">HT</a></td>
-                <td><a href="#"><?php 
-                    session_start();
-                    if(isset($_SESSION["user"])) echo $_SESSION["user"];
+                <td><a href="menu.php">Menu</a></td>
+                <td><a href="index.php">HT</a></td>
+                <td><a href="konto.php"><?php 
+                    if(isset($_COOKIE["login"])) echo $_COOKIE["login"];
                     else echo "Zaloguj";
                     ?></a></td>
             </tr>
         </table>
     </div>
     <div id="sekcje">
-        <div id="lewy"></div>
+        <div id="lewy">Strona główna</div>
         <div id="prawy"></div>
     </div>
     
