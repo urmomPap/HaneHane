@@ -1,0 +1,107 @@
+@font-face { font-family: Pixeled; src: url('fonts/pixeled/Pixeled.ttf');} /* Font implementation */
+
+body {margin: 0px; color:rgb(255, 255, 255); font-family:'Pixeled';} /* Font config */
+
+::-webkit-scrollbar{display: none;} /* Dont display scrollbar */
+
+nav{user-select: none;} /* Can't select nav elements */
+
+.element:hover {
+    cursor:pointer; /* Cursor pointer for nav elements */
+
+    color:#b65d57; /* Hover color change */
+}
+
+nav, footer {
+    background-color: #2C2B3C; /* Background color */
+
+    vertical-align: middle; /* Center vertically */
+    line-height: 50px;
+
+    width: 100%;
+
+    display: flex; /* Display nav items in rows*/
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 25px; /* Font Size */
+}
+
+nav {height: 50px;}
+
+footer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font implementation */
+
+    position: absolute; /* Stick to bottom fix */
+    bottom: 0;
+    height: 60px;
+
+    padding-bottom: 20px; /* Center vertically */
+}
+
+main {
+    background-color: #121420; 
+
+    width: 100%; /* 100% without nav and footer */
+    top: 50px; 
+    bottom: 50px;
+    position:absolute;
+}
+
+section#left, section#right {
+    font-size: 20px;
+    background-color: #403F4C;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+.g-recaptcha {display: inline-block;}
+
+section#left {margin-left: 8%; float: left} /* Align element to left */
+section#right {margin-right: 8%; float: right} /* Align elements to right */
+
+input[type=text], input[type=password], input[type=email] {
+    font-size: 15px; /* Inputs font config */
+    letter-spacing: 0.125em;
+    color: #b65d57;
+    text-align: center;
+
+    width: 90%; /* Inputs style */
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #121420;
+    background-color: #403F4C;
+
+}
+input[type=text] {font-family:'Pixeled';}
+input[type=email] {font-family: Verdana;}
+input[type=password] {font-family: Verdana;}
+input[type=text]:hover {background-color:#2C2B3C;}
+input[type=password]:hover {background-color:#2C2B3C;}
+input[type=email]:hover {background-color:#2C2B3C;}
+input[type=submit]:hover {cursor:pointer; background-color:#2C2B3C;}
+
+input[type=submit] {
+    color: white;
+    font-family: 'Pixeled';
+    padding-bottom: 5px;
+    background-color: #403F4C;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #121420;
+}
+
+input[type=button] {
+    color: white;
+    font-family: 'Pixeled';
+    padding-bottom: 5px;
+    background-color: #403F4C;
+    width: 40%;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #121420;
+    font-size: 20px;
+}
+input[type=button]:hover {cursor:pointer; background-color:#2C2B3C;}
