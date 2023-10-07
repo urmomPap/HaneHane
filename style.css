@@ -1,0 +1,49 @@
+/* #B76D68
+   #403F4C
+   #2C2B3C
+   #1B2432
+   #121420 */
+body {
+    background-color: #121420;
+    margin: 0;
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+td {
+    width: 33%;
+}
+
+#nav {
+    position: absolute;
+    background-color: #1B2432;
+    width: 100%;
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sekcje {
+    display: flex;
+    justify-content: space-evenly;
+}
+#lewy, #prawy {
+    background-color: #403F4C;
+    height: 900px;
+    width: 700px;
+}
+#footer {
+    position: absolute;
+    background-color: #1B2432;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
