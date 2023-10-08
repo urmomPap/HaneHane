@@ -6,6 +6,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="logowanie.css">
 </head>
 <body>
     <div id="nav">
@@ -21,7 +22,13 @@
         </table>
     </div>
     <div id="sekcje">
-        <div id="lewy">Menu</div>
+        <div id="lewy">
+        <button class="input-submit" onclick="window.location.replace('gry/kolkoikrzyzyk.php')">Kółko i krzyżyk</button><br>
+        <button class="input-submit" onclick="window.location.replace('gry/cps.php')">CPS</button><br>
+        <button class="input-submit" onclick="window.location.replace('gry/memory.php')">Memory</button><br>
+        <button class="input-submit" onclick="window.location.replace('gry/reakcje.php')">Reakcje</button><br>
+        <button class="input-submit" onclick="window.location.replace('gry/wisielec.php')">Wisielec</button><br>
+        </div>
         <div id="prawy"></div>
     </div>
     
