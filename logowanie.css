@@ -10,6 +10,9 @@
     background-color: #403F4C;
     border: 0;
     border-bottom: 2px solid black;
+    font-size: 15px;
+    color: white;
+    text-align: center;
 }
 .input-text:hover, .input-submit:hover {
     background-color: #2C2B3C;
