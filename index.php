@@ -22,7 +22,7 @@
         </table>
     </div>
     <div id="sekcje">
-        <div id="lewy">Strona głównaaaa</div>
+        <div id="lewy">Strona główna</div>
         <div id="prawy"></div>
     </div>
     
